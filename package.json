@@ -1,6 +1,7 @@
 {
   "name": "@kaionesyan/eslint-config",
   "version": "0.0.1",
+  "private": false,
   "main": "build/index.js",
   "license": "MIT",
   "scripts": {
