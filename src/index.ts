@@ -1,4 +1,4 @@
-import { Linter } from 'eslint';
+import { Linter } from 'eslint'
 
 const config: Linter.Config = {
   env: {
@@ -19,6 +19,19 @@ const config: Linter.Config = {
   },
   plugins: ['import-helpers'],
   rules: {
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        semi: false,
+        trailingComma: 'all',
+        arrowParens: 'always',
+        tabWidth: 2,
+        useTabs: false,
+        endOfLine: 'lf',
+        bracketSpacing: true,
+      },
+    ],
     'import-helpers/order-imports': [
       'warn',
       {
@@ -31,6 +44,6 @@ const config: Linter.Config = {
       },
     ],
   },
-};
+}
 
-export = config;
+export = config
