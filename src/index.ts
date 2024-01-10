@@ -44,6 +44,12 @@ const config: Linter.Config = {
       },
     ],
   },
+  settings: {
+    'import/resolver': {
+      typescript: true,
+      node: true,
+    },
+  },
 }
 
 export = config
